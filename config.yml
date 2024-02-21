@@ -1,0 +1,25 @@
+
+jobs:
+  # 最大同时运行的任务数
+  max_running: 50
+  # 单任务并行数（不建议太大）
+  parallel: 1
+  # 已结束任务结果的缓存时间（分钟）
+  result_cache_time: 10
+
+aes:
+  algo: cbc_256
+  key: r9qIJ7lxhwWofqYvac9XUU6xEGEUamOX
+  iv: ac9XUU6xEGEUamOX
+
+server:
+  # switch to register to server
+  register: false
+  # authorization header of system basic auth authentication
+  authorization: Basic cHVibGljOjFnc2J6ODk3NTM0aHo=
+  # the ip address and tcp port of server
+  address: 192.168.163.15:8092
+  # registration name
+  reg-name: ipscanner-01
+  # registration frequency, minute
+  reg-freq: 60
